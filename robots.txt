@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://paramesh284.github.io/Parameshwaran-S-portfolio/sitemap.xml
