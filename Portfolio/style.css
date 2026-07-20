@@ -1,0 +1,552 @@
+/* ===========================
+   GOOGLE FONT & RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#ffffff;
+    line-height:1.6;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(15,23,42,.95);
+    backdrop-filter:blur(12px);
+    z-index:1000;
+    box-shadow:0 4px 15px rgba(0,0,0,.2);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#38bdf8;
+    cursor:pointer;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* ===========================
+   HOME SECTION
+=========================== */
+
+.home{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8%;
+    gap:60px;
+}
+
+.home-content{
+    flex:1;
+}
+
+.home-content h3{
+    font-size:28px;
+    color:#38bdf8;
+}
+
+.home-content h1{
+    font-size:60px;
+    margin:10px 0;
+}
+
+.home-content h2{
+    font-size:34px;
+    color:#94a3b8;
+    margin-bottom:20px;
+}
+
+.home-content p{
+    font-size:18px;
+    color:#d1d5db;
+    margin-bottom:35px;
+    max-width:650px;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+section{
+    scroll-margin-top:90px;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn{
+    text-decoration:none;
+    background:#38bdf8;
+    color:#0f172a;
+    padding:14px 28px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+    transform:translateY(-4px);
+}
+
+/* ===========================
+   PROFILE IMAGE
+=========================== */
+
+.home-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.home-image img{
+    width:370px;
+    height:370px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #38bdf8;
+    box-shadow:0 0 40px rgba(56,189,248,.45);
+    transition:.4s;
+}
+
+.home-image img:hover{
+    transform:scale(1.05);
+}
+
+/* ===========================
+   COMMON SECTION
+=========================== */
+
+section{
+    padding:100px 8%;
+}
+
+section h2{
+    text-align:center;
+    font-size:42px;
+    color:#38bdf8;
+    margin-bottom:50px;
+}
+/* ===========================
+   ABOUT SECTION
+=========================== */
+
+#about{
+    background:#111827;
+    border-radius:20px;
+    margin:40px 8%;
+    text-align:center;
+}
+
+#about p{
+    max-width:900px;
+    margin:auto;
+    font-size:18px;
+    color:#d1d5db;
+    line-height:1.9;
+}
+
+/* ===========================
+   SKILLS SECTION
+=========================== */
+
+#skills ul{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    list-style:none;
+    margin-top:40px;
+}
+
+#skills li{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+    border:2px solid transparent;
+}
+
+#skills li:hover{
+    background:#38bdf8;
+    color:#0f172a;
+    border-color:white;
+    transform:translateY(-8px);
+}
+
+/* ===========================
+   EXPERIENCE
+=========================== */
+
+#experience{
+    background:#111827;
+    border-radius:20px;
+    margin:40px 8%;
+}
+
+#experience div{
+    background:#1e293b;
+    padding:25px;
+    margin-bottom:25px;
+    border-left:5px solid #38bdf8;
+    border-radius:10px;
+    transition:.3s;
+}
+
+#experience div:hover{
+    transform:translateX(10px);
+    box-shadow:0 10px 25px rgba(56,189,248,.25);
+}
+
+#experience h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+#experience p{
+    color:#d1d5db;
+}
+
+/* ===========================
+   PROJECTS
+=========================== */
+
+#projects ul{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    list-style:none;
+    margin-top:40px;
+}
+
+#projects li{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    font-size:18px;
+    font-weight:600;
+    transition:.4s;
+    cursor:pointer;
+    border:2px solid transparent;
+}
+
+#projects li:hover{
+    transform:translateY(-10px);
+    border-color:#38bdf8;
+    box-shadow:0 10px 30px rgba(56,189,248,.35);
+}
+.project-card{
+    width: 400px;
+    background: #1e293b;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.project-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.project-card h3{
+    margin: 15px;
+}
+
+.project-card p{
+    margin: 0 15px 20px;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+#contact{
+    text-align:center;
+}
+
+#contact p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+#contact a{
+    color:#38bdf8;
+    text-decoration:none;
+    font-weight:600;
+}
+
+#contact a:hover{
+    color:white;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+    color:#94a3b8;
+    font-size:16px;
+}
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width:1024px){
+
+.home{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.home-content h1{
+    font-size:48px;
+}
+
+.home-content h2{
+    font-size:28px;
+}
+
+.home-image img{
+    width:300px;
+    height:300px;
+}
+
+.buttons{
+    justify-content:center;
+}
+
+}
+
+@media (max-width:768px){
+
+header{
+    flex-direction:column;
+    padding:15px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:15px;
+}
+
+nav a{
+    margin:5px 10px;
+}
+
+.home{
+    padding:140px 25px 80px;
+}
+
+.home-content h1{
+    font-size:40px;
+}
+
+.home-content h2{
+    font-size:24px;
+}
+
+.home-content h3{
+    font-size:22px;
+}
+
+.home-content p{
+    font-size:16px;
+}
+
+.home-image img{
+    width:240px;
+    height:240px;
+}
+
+section{
+    padding:80px 25px;
+}
+
+section h2{
+    font-size:34px;
+}
+
+#about,
+#experience{
+    margin:20px;
+}
+
+}
+
+@media(max-width:480px){
+
+.logo{
+    font-size:22px;
+}
+
+nav a{
+    font-size:14px;
+}
+
+.home-content h1{
+    font-size:32px;
+}
+
+.home-content h2{
+    font-size:20px;
+}
+
+.btn{
+    width:100%;
+    text-align:center;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#38bdf8;
+    border-radius:20px;
+}
+
+/* ==========================================
+   TEXT SELECTION
+========================================== */
+
+::selection{
+    background:#38bdf8;
+    color:white;
+}
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+transform:translateY(50px);
+
+}
+
+100%{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+.home-content{
+
+animation:fadeUp 1s ease;
+
+}
+
+.home-image{
+
+animation:fadeUp 1.3s ease;
+
+}
+
+section{
+
+animation:fadeUp 1s ease;
+
+}
+
+/* ==========================================
+   HOVER EFFECTS
+========================================== */
+
+.logo:hover{
+
+color:white;
+transition:.3s;
+
+}
+
+section h2:hover{
+
+letter-spacing:2px;
+transition:.3s;
+
+}
+
+/* ==========================================
+   GLOW EFFECT
+========================================== */
+
+.btn{
+
+box-shadow:0 0 20px rgba(56,189,248,.4);
+
+}
+
+.btn:hover{
+
+box-shadow:0 0 35px rgba(56,189,248,.8);
+
+}
+
+/* ==========================================
+   END
+========================================== */
